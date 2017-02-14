@@ -1,0 +1,273 @@
+// color
+$blue 			: #3195d6;
+$light-white	: #f4f8f9;
+$gray   		: #878990;
+$black  		: #4f5057;
+
+// fonts
+$proxima: "proxima-nova", sans-serif;
+
+// functions
+// for converting px to em
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+// mixins
+// for circles
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+// for heading style back line
+@mixin back-line-headings {
+	z-index: 1;
+    position: relative;
+    background: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+}
+// for giving widths
+@mixin width($width) {
+	width: $width;
+}
+// for adding font size and color
+@mixin style($font-size, $color) {
+	font-size: $font-size;
+	font-size: calculateRem($font-size);
+	line-height: $font-size + (10px);
+	color: $color;
+	font-style: normal;
+}
+// for transition
+@mixin transition($args) {
+	-webkit-transition: $args;
+	-moz-transition: $args;
+	-ms-transition: $args;
+	-o-transition: $args;
+	transition: $args;
+}
+
+
+// general styles
+.flex {
+	display: flex;
+}
+
+.flex-center {
+	display: flex;
+	align-items: center;
+}
+
+.flex-start {
+	display: flex;
+	align-items: flex-start;
+}
+
+.flex-end {
+	display: flex;
+	align-items: flex-end;
+}
+
+// general spacings
+.no-margin {
+	margin: 0;
+}
+
+.head-margin {
+	margin-bottom: 15px;
+}
+
+.p-margin {
+	margin-bottom: 8px;
+}
+
+.no-padding {
+	padding: 0;
+}
+
+.pad-all {
+	padding: 20px;
+}
+
+.pad-all-n {
+	padding: 17px;
+}
+
+.pad-horizontal {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.pad-vertical {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.space-up-b {
+	margin-top: 61px;
+}
+
+.space-down-b {
+	margin-bottom: 61px;
+}
+
+.space-up-n {
+	margin-top: 51px;
+}
+
+.space-down-n {
+	margin-bottom: 51px;
+}
+
+.space-up-m {
+	margin-top: 31px;
+}
+
+.space-down-m {
+	margin-bottom: 31px;
+}
+
+.space-up-l {
+	margin-top: 21px;
+}
+
+.space-down-l {
+	margin-bottom: 21px;
+}
+
+// paragraph
+p {
+	font-size: 14px;
+}
+
+// heading styles
+.section_heading {
+	h1 {
+		@include style(44px, inherit);
+		font-family: $proxima;
+		font-style: normal;
+		font-weight: 800;
+		letter-spacing: 0.01em;
+	}
+	h2 {
+		@include style(28px, inherit);
+		font-family: $proxima;
+		font-style: normal;
+		font-weight: 800;
+		letter-spacing: -0.01em;
+	}
+	h3 {
+		@include style(25px, inherit);
+		font-family: $proxima;
+		font-style: normal;
+		font-weight: 800;
+		letter-spacing: 0.04em;
+	}
+	h4 {
+		@include style(14px, inherit);
+		font-family: $proxima;
+		font-style: normal;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+	}
+}
+.back_line {
+	position: relative;
+	&:before {
+		content: '';
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		height: 1px;
+		background-color: #e5e5e5;
+		width: 100%;
+	}
+	h1 {
+		@include back-line-headings;
+	}
+	h2 {
+		@include back-line-headings;
+	}
+	h3 {
+		@include back-line-headings;
+	}
+	h4 {
+		@include back-line-headings;
+	}
+	h5 {
+		@include back-line-headings;
+	}
+	h6 {
+		@include back-line-headings;
+	}
+}
+.bottom_line {
+	position: relative;
+	&:before {
+		content: '';
+		position: absolute;
+		bottom: 0px;
+		left: 0;
+		transform: translateY(-100%);
+		width: 32px;
+		height: 3px;
+		background-color: #c3d1d1;
+	}
+}
+
+// divider
+.divider {
+	display: block;
+	width: 100%;
+	height: 1px;
+	background-color: #363b3e;
+}
+
+// reset
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
