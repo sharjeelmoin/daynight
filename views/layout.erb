@@ -4,34 +4,107 @@
 <!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Day Night Medical Centers</title>
+  <!-- Typekit -->
+  <script>
+    (function(d) {
+      var config = {
+        kitId: 'qgn3jfh',
+        scriptTimeout: 3000,
+        async: false
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=false;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
 
-  <title>MyApp</title>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <link rel="stylesheet" href="/stylesheets/main.css" />
+  <!-- style sheet -->
+  <link rel="stylesheet" href="/stylesheets/app.css" />
 </head>
 <body>
-  <div class="wrapper">
-    <header class="branding">
-      <h1>MyApp</h1>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <img src="/images/logo.jpg" class="img-responsive logo">
+          </div>
+          <div class="col-sm-8">
+            <ul class="list-inline menu no-margin">
+              <li><a href="#">Medical Services</a></li>
+              <li><a href="#">Our Clinics</a></li>
+              <li><a href="#">Our Doctors</a></li>
+              <li><a href="#">Online Appointments</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </header>
-
-    <div class="main">
+    
       <%= yield %>
-    </div>
 
-    <footer class="branding">
-      <small>&copy; <%= Time.now.year %></small>
+    <footer>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3">
+            <h4 class="c-blue">About us</h4>
+            <p>We are an Accredited General Practice which means we adhere to the existing standards required by the Australian Government and are re-accredited every 3 years. This all means that you get the best possible care available. Thorough and comprehensive medical records.</p>
+          </div>
+
+          <div class="col-sm-3">
+            <h4 class="c-blue">Varsity Lakes</h4>
+            <ul>
+              <li>Mon: 09:00 am - 5:00 pm</li>
+              <li>Tue: 09:00 am - 5:00 pm</li>
+              <li>Wed: 09:00 am - 5:00 pm</li>
+              <li>Thu: 09:00 am - 5:00 pm</li>
+              <li>Fri: 09:00 am - 5:00 pm</li>
+              <li>Sat: Closed</li>
+              <li>Sun: Closed </li>
+            </ul>
+          </div>
+
+          <div class="col-sm-3">
+            <h4 class="c-blue">Surfers Paradise</h4>
+            <ul>
+              <li>Mon: 07:00 am - 11:00 pm</li>
+              <li>Tue: 07:00 am - 11:00 pm</li>
+              <li>Wed: 07:00 am - 11:00 pm</li>
+              <li>Thu: 07:00 am - 11:00 pm</li>
+              <li>Fri: 07:00 am - 11:00 pm</li>
+              <li>Sat: 07:00 am - 11:00 pm</li>
+              <li>Sun: 07:00 am - 11:00 pm</li>
+            </ul>
+          </div>
+
+          <div class="col-sm-3">
+            <h4 class="c-blue">Surfers Paradise</h4>
+            <ul>
+              <li>Surfers Paradise Day & Night Medical 16/3221 Surfers Paradise Blvd, Surfers Paradise</li>
+              <li><i class="fa fa-phone" aria-hidden="true"></i> 07 5592 2299</li>
+              <li>Open: Monday to Sunday 7:00am – 11:00pm All Year Round.</li>
+            </ul>
+            <ul>
+              <li>Surfers Paradise Day & Night Medical 16/3221 Surfers Paradise Blvd, Surfers Paradise</li>
+              <li><i class="fa fa-phone" aria-hidden="true"></i> 07 5592 2299</li>
+              <li>Open: Monday to Sunday 7:00am – 11:00pm All Year Round.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
     </footer>
-  </div>
 
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-  <!--[if lt IE 7]>
-    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script>
-    <script>window.attachEvent("onload",function(){CFInstall.check({mode:"overlay"})})</script>
-  <![endif]-->
+  <!-- scripts -->
+    <!-- jQuery library (served from Google) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- scripts ends -->
 </body>
 

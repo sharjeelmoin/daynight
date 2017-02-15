@@ -7,5 +7,5 @@ class MyApp < Sinatra::Base
 end
 
 get "/" do
-	erb :welcome
+	erb :home
 end
