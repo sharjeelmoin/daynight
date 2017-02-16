@@ -56,6 +56,16 @@
 	}
 }
 
+.features-home {
+	.feature {
+		margin-bottom: 80px;
+
+		&.mb-0 {
+			margin-bottom: 0;
+		}
+	}
+}
+
 .speciality-home {
 
 	h1 {
@@ -72,8 +82,14 @@
 	    position: absolute;
 	    background-color: #e5e5e6;
 	    height: 100%;
-	    max-height: 396px;
+	    max-height: 480px;
 	    width: 1px;
 	    left: 50%;
+	}
+
+	.appointment-btn {
+		max-width: 185px;
+		text-align: center;
+		margin-top: 35px;
 	}
 }
