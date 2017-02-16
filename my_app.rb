@@ -9,3 +9,7 @@ end
 get "/" do
 	erb :home
 end
+
+get "/our-clinics" do
+	erb :ourclinics
+end

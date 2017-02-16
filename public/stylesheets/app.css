@@ -78,6 +78,69 @@ header {
   text-align: center;
   margin-top: 35px; }
 
+.hero {
+  background-image: url("../images/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  height: 100vh;
+  max-height: 587px; }
+
+.boxes {
+  position: relative;
+  margin-top: -148px; }
+  .boxes .box {
+    padding: 35px;
+    min-height: 380px;
+    position: relative;
+    transition: .2s; }
+    .boxes .box:hover {
+      box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.4);
+      transition: .2s; }
+    .boxes .box .box-link {
+      position: absolute;
+      bottom: 45px;
+      left: 50%;
+      margin-left: -88px;
+      z-index: 10; }
+
+.box-heading {
+  font-size: 25px;
+  font-weight: 600; }
+
+.sec {
+  padding: 65px 0;
+  border-bottom: 1px solid #ededee; }
+  .sec h1 {
+    margin-bottom: 16px; }
+  .sec .box {
+    padding: 20px 25px; }
+  .sec .box-heading {
+    margin-bottom: 14px; }
+
+.features-home .feature {
+  margin-bottom: 80px; }
+  .features-home .feature.mb-0 {
+    margin-bottom: 0; }
+
+.speciality-home h1 {
+  margin-bottom: 40px;
+  margin-top: 0; }
+.speciality-home .speciality-list {
+  max-width: 260px;
+  line-height: 31px; }
+.speciality-home .bordered:before {
+  position: absolute;
+  background-color: #e5e5e6;
+  height: 100%;
+  max-height: 480px;
+  width: 1px;
+  left: 50%; }
+.speciality-home .appointment-btn {
+  max-width: 185px;
+  text-align: center;
+  margin-top: 35px; }
+
 body {
   font-family: "proxima-nova", sans-serif;
   color: #878990;
