@@ -7,7 +7,7 @@ body {
 }
 
 a {
-	color: $gray;
+	color: #23527c;
 	transition: .2s;
 
 	&:hover {
@@ -83,6 +83,12 @@ main {
 
 	.widget-body {
 	    padding: 15px 20px 25px;
+
+	    .fs-18 {
+	    	i {
+	    		font-size: 12px;
+	    	}
+	    }
 	}
 }
 

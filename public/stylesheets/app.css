@@ -2,6 +2,8 @@
 @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
 header {
   border-bottom: 1px solid #f8f8f8; }
+  header a {
+    color: #878990; }
 
 .logo {
   padding: 7px 0; }
@@ -78,6 +80,26 @@ header {
   text-align: center;
   margin-top: 35px; }
 
+.doctor-list {
+  margin-top: 40px; }
+  .doctor-list li {
+    margin-bottom: 15px; }
+  .doctor-list a {
+    display: block;
+    padding: 25px;
+    transition: .2s; }
+    .doctor-list a span {
+      color: #000; }
+    .doctor-list a:hover {
+      box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.4);
+      transition: .2s;
+      background-color: #3195d6;
+      color: #fff; }
+      .doctor-list a:hover span {
+        color: #fff; }
+    .doctor-list a i {
+      font-size: 12px; }
+
 body {
   font-family: "proxima-nova", sans-serif;
   color: #878990;
@@ -86,7 +108,7 @@ body {
   line-height: 25px; }
 
 a {
-  color: #878990;
+  color: #23527c;
   transition: .2s; }
   a:hover {
     text-decoration: none;
@@ -141,6 +163,8 @@ main {
         margin-right: 10px; }
   .widget .widget-body {
     padding: 15px 20px 25px; }
+    .widget .widget-body .fs-18 i {
+      font-size: 12px; }
 
 .widget-heading {
   font-size: 20px;

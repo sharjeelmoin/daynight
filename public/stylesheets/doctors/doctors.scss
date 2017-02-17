@@ -1,0 +1,31 @@
+.doctor-list {
+	margin-top: 40px;
+	li {
+		margin-bottom: 15px;
+	}
+
+	a {
+		display: block;
+		padding: 25px;
+		transition: .2s;
+		span {
+			color: #000;
+		}
+		&:hover {
+			box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.4);
+			transition: .2s;
+			background-color: $blue;
+			color: #fff;
+
+			span {
+				color: #fff;
+			}
+		}
+
+
+
+		i {
+			font-size: 12px;
+		}
+	}
+}
