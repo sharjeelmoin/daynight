@@ -24,6 +24,14 @@ header {
   color: #fff;
   height: 100vh;
   max-height: 587px; }
+  @media (max-width: 991px) {
+    .hero .heading_main {
+      font-size: 21px;
+      margin-top: 75px; } }
+  @media (max-width: 991px) {
+    .hero .para_main {
+      margin-bottom: 17px;
+      font-size: 15px; } }
 
 .boxes {
   position: relative;
@@ -33,6 +41,9 @@ header {
     min-height: 380px;
     position: relative;
     transition: .2s; }
+    @media (max-width: 767px) {
+      .boxes .box {
+        margin-bottom: 15px; } }
     .boxes .box:hover {
       box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.4);
       transition: .2s; }
@@ -42,6 +53,17 @@ header {
       left: 50%;
       margin-left: -88px;
       z-index: 10; }
+      @media (max-width: 991px) {
+        .boxes .box .box-link {
+          position: relative;
+          bottom: 0;
+          left: 0;
+          margin-left: 0; } }
+      @media (max-width: 767px) {
+        .boxes .box .box-link {
+          width: 100%;
+          max-width: 148px;
+          margin: 30px auto; } }
 
 .box-heading {
   font-size: 25px;
@@ -50,10 +72,16 @@ header {
 .sec {
   padding: 65px 0;
   border-bottom: 1px solid #ededee; }
+  @media (max-width: 991px) {
+    .sec {
+      padding: 20px 0; } }
   .sec h1 {
     margin-bottom: 16px; }
   .sec .box {
     padding: 20px 25px; }
+    @media (max-width: 991px) {
+      .sec .box {
+        margin-bottom: 15px; } }
   .sec .box-heading {
     margin-bottom: 14px; }
 
@@ -75,6 +103,13 @@ header {
   max-height: 480px;
   width: 1px;
   left: 50%; }
+  @media (max-width: 767px) {
+    .speciality-home .bordered:before {
+      display: none; } }
+@media (max-width: 767px) {
+  .speciality-home .res_border {
+    border-top: 1px solid #e5e5e6 !important;
+    margin-top: 25px !important; } }
 .speciality-home .appointment-btn {
   max-width: 185px;
   text-align: center;
@@ -84,6 +119,9 @@ header {
   margin-top: 40px; }
   .doctor-list li {
     margin-bottom: 15px; }
+    @media (max-width: 1200px) {
+      .doctor-list li {
+        height: 180px; } }
   .doctor-list a {
     display: block;
     padding: 25px;
@@ -99,6 +137,9 @@ header {
         color: #fff; }
     .doctor-list a i {
       font-size: 12px; }
+    @media (max-width: 1200px) {
+      .doctor-list a {
+        min-height: 135px; } }
 
 body {
   font-family: "proxima-nova", sans-serif;
@@ -135,11 +176,24 @@ main {
   .page-title-holder .page-title {
     font-size: 30px;
     font-weight: 400; }
+    @media (max-width: 991px) {
+      .page-title-holder .page-title {
+        padding-top: 5px;
+        padding-bottom: 5px; } }
   .page-title-holder .breadcrumb {
     background-color: transparent;
     position: absolute;
     right: 0;
     top: 0px; }
+    @media (max-width: 991px) {
+      .page-title-holder .breadcrumb {
+        position: relative; } }
+    @media (max-width: 400px) {
+      .page-title-holder .breadcrumb {
+        position: relative;
+        font-size: 17px;
+        text-align: left;
+        padding: 0; } }
     .page-title-holder .breadcrumb li {
       color: #fff; }
       .page-title-holder .breadcrumb li a {
@@ -198,6 +252,14 @@ main {
 .rounded-btn {
   padding: 10px 48px;
   border-radius: 25px; }
+  @media (max-width: 991px) {
+    .rounded-btn {
+      padding: 2px 24px;
+      border-radius: 25px;
+      font-size: 14px;
+      margin: 3px auto;
+      display: block;
+      text-align: center; } }
 
 .blue-btn {
   background-color: #3195d6;
@@ -257,6 +319,10 @@ h1 {
 .flex-end {
   display: flex;
   align-items: flex-end; }
+
+@media (max-width: 400px) {
+  .res_flex {
+    display: inline-block; } }
 
 .no-margin {
   margin: 0; }
@@ -396,6 +462,9 @@ footer {
   border-top: 1px solid #ededee; }
   footer .widget-holder {
     padding: 50px 0; }
+    @media (max-width: 1215px) {
+      footer .widget-holder {
+        padding: 15px; } }
   footer h4 {
     font-size: 20px;
     text-transform: uppercase;
@@ -413,5 +482,8 @@ footer {
     padding: 20px 0; }
     footer .copyright-holder .text-second {
       text-align: right; }
+      @media (max-width: 767px) {
+        footer .copyright-holder .text-second {
+          text-align: left; } }
 
 /*# sourceMappingURL=app.css.map */

@@ -2,6 +2,10 @@
 	margin-top: 40px;
 	li {
 		margin-bottom: 15px;
+
+		@include media('<=1200px') {
+	        height: 180px;
+		}
 	}
 
 	a {
@@ -22,10 +26,12 @@
 			}
 		}
 
-
-
 		i {
 			font-size: 12px;
+		}
+
+		@include media('<=1200px') {
+	        min-height: 135px;
 		}
 	}
 }

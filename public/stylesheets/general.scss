@@ -42,6 +42,11 @@ main {
     .page-title {
 	    font-size: 30px;
 	    font-weight: 400;
+
+	    @include media('<=991px') {
+		    padding-top: 5px;
+    		padding-bottom: 5px;
+		}
 	}
 
 	.breadcrumb {
@@ -49,6 +54,16 @@ main {
 	    position: absolute;
 	    right: 0;
 	    top: 0px;
+
+	    @include media('<=991px') {
+	        position: relative;
+		} 
+		@include media('<=400px') {
+	        position: relative;
+    		font-size: 17px;
+    		text-align: left;
+    		padding: 0;
+		}   
 
 	    li {
 	    	color: #fff;
@@ -130,6 +145,15 @@ main {
 .rounded-btn {
     padding: 10px 48px;
     border-radius: 25px;
+
+    @include media('<=991px') {
+		padding: 2px 24px;
+	    border-radius: 25px;
+	    font-size: 14px;
+	    margin: 3px auto;
+	    display: block;
+	    text-align: center;
+	}
 }
 
 .blue-btn {
@@ -253,6 +277,14 @@ h1 {
 .flex-end {
 	display: flex;
 	align-items: flex-end;
+}
+
+//flex none for responsive pageTitle
+.res_flex {
+	@include media('<=400px') {
+	    display: inline-block;
+	}
+	
 }
 
 // general spacings
@@ -389,6 +421,10 @@ footer {
 	
 	.widget-holder {
 		padding: 50px 0;
+
+		@include media('<=1215px') {
+	        padding: 15px;
+		}
 	}
 
 	h4 {
@@ -414,8 +450,13 @@ footer {
 	.copyright-holder {
 		background-color: $black;
 		padding: 20px 0;
+
 		.text-second {
 			text-align: right;
+
+			@include media('<=767px') {
+		        text-align: left;
+			}
 		}
 	}
 }

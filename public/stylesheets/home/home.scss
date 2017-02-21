@@ -5,6 +5,22 @@
 	color: #fff;
 	height: 100vh;
 	max-height: 587px;
+	
+
+	.heading_main{
+		@include media('<=991px') {
+			font-size: 21px;
+    		margin-top: 75px;
+		}
+	}
+
+	.para_main{
+		@include media('<=991px') {
+			margin-bottom: 17px;
+    		font-size: 15px;
+		}
+
+	}
 }
 
 .boxes {
@@ -17,6 +33,10 @@
 		position: relative;
 		transition: .2s;
 
+		@include media('<=767px') {
+			margin-bottom: 15px;
+		}
+
 		&:hover {
   			box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.4);
   			transition: .2s;
@@ -28,6 +48,18 @@
 		    left: 50%;
 		    margin-left: -88px;
 		    z-index: 10;
+
+		    @include media('<=991px') {
+			    position: relative;
+			    bottom: 0;
+			    left: 0;
+			    margin-left: 0;
+			}
+			@include media('<=767px') {
+		        width: 100%;
+			    max-width: 148px;
+			    margin: 30px auto;
+			}
 		}
 	}
 
@@ -42,6 +74,10 @@
 	padding: 65px 0;
 	border-bottom: 1px solid #ededee;
 
+	@include media('<=991px') {
+        padding: 20px 0;
+	}
+
 	h1 {
 		margin-bottom: 16px;
 	}
@@ -49,6 +85,10 @@
 
 	.box {
 		padding: 20px 25px;
+
+		@include media('<=991px') {
+	        margin-bottom: 15px;
+		}
 	}
 
 	.box-heading {
@@ -85,6 +125,18 @@
 	    max-height: 480px;
 	    width: 1px;
 	    left: 50%;
+
+	    @include media('<=767px') {
+	        display: none;
+		}
+	}
+	.res_border{
+
+		@include media('<=767px') {
+	        border-top: 1px solid #e5e5e6 !important;
+    		margin-top: 25px !important;
+		}
+		
 	}
 
 	.appointment-btn {
